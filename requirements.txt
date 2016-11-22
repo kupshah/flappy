@@ -1,0 +1,5 @@
+markovify==0.4.0
+requests==2.7.0
+bottle==0.12.9
+python-twitter==3.1
+
