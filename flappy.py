@@ -110,7 +110,7 @@ def flappy():
     if data['text']:
         text = data['text']
         text = text.lower()
-        k = 0
+        k = 5
         i = 35
         a = 49
         v = 15
@@ -118,7 +118,7 @@ def flappy():
         words = text.split()
         if 'kunaal' in words:
             k += 1
-            if k >= 3:      
+            if k == random.randint(2,6):      
                 message = {'bot_id':'288f9e18900355d4b59ec6f717', 'text':random.choice("kunaal is gr8", "I <3 Kunaal", "Kunaal is my creator and i love him so much not cause he can destroy m ebut cause he's great",
                                                                                    "no one amazing like kunaal", "So cool kunaal is",
                                                                                    "Kunaal is like 1000x cooler than amani lol hes the best",
