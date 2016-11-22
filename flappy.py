@@ -117,7 +117,6 @@ def flappy():
         s = 99
         words = text.split()
         if 'kunaal' in words:
-            k += 1
             if k == random.randint(2,6):      
                 message = {'bot_id':'288f9e18900355d4b59ec6f717', 'text':random.choice("kunaal is gr8", "I <3 Kunaal", "Kunaal is my creator and i love him so much not cause he can destroy m ebut cause he's great",
                                                                                    "no one amazing like kunaal", "So cool kunaal is",
