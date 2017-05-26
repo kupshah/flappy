@@ -110,15 +110,9 @@ def flappy():
     if data['text']:
         text = data['text']
         text = text.lower()
-        k = 5
-        i = 35
-        a = 49
-        v = 15
-        s = 99
         words = text.split()
-        if 'kunaal' in words:
-            if k == random.randint(2,6):      
-                message = {'bot_id':'288f9e18900355d4b59ec6f717', 'text':random.choice("kunaal is gr8", "I <3 Kunaal", "Kunaal is my creator and i love him so much not cause he can destroy m ebut cause he's great",
+        if 'kunaal' in words:     
+            message = {'bot_id':'288f9e18900355d4b59ec6f717', 'text':random.choice("kunaal is gr8", "I <3 Kunaal", "Kunaal is my creator and i love him so much not cause he can destroy m ebut cause he's great",
                                                                                    "no one amazing like kunaal", "So cool kunaal is",
                                                                                    "Kunaal is like 1000x cooler than amani lol hes the best",
                                                                                    "i love my creator qunol", "I h8 everyone except kunaal",
@@ -131,22 +125,20 @@ def flappy():
             message = json.dumps(message)
             r = requests.post('https://api.groupme.com/v3/bots/post', message)
 
-        if len(words) > 1:
-            if i == random.randint(20,50):
-                message = {'bot_id':'288f9e18900355d4b59ec6f717', 'text':msg_model.make_short_sentence(140)}
-                message = json.dumps(message)
-                r = requests.post('https://api.groupme.com/v3/bots/post', message)
+        #if len(words) > 1:
+            #if i == random.randint(20,50):
+                #message = {'bot_id':'288f9e18900355d4b59ec6f717', 'text':msg_model.make_short_sentence(140)}
+                #message = json.dumps(message)
+                #r = requests.post('https://api.groupme.com/v3/bots/post', message)
 
         if "amani" in words or "amangi" in words:
-            if a == random.randint(42,50):
-                message = {'bot_id':'288f9e18900355d4b59ec6f717', 'text':random.choice("ha amani sux", "I hate amangi :)",
+            message = {'bot_id':'288f9e18900355d4b59ec6f717', 'text':random.choice("ha amani sux", "I hate amangi :)",
                                                                                        "amani is the #1 worst responder",
-                                                                                       "Ben franklin texts back faster than Amani",
-                                                                                       "Why is anyone friends with amani", "Amani is pretty cool",
+                                                                                       "Ben franklin texts back faster than Amani", "Amani is pretty cool",
                                                                                        "maybe some people could consider amani as being okay",
                                                                                        "amani ew")}
-                message = json.dumps(message)
-                r = requests.post('https://api.groupme.com/v3/bots/post', message)
+            message = json.dumps(message)
+            r = requests.post('https://api.groupme.com/v3/bots/post', message)
 
         if "vasu" in words:
             message_to_send = random.choice(["vasu is sooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo dumb",
@@ -154,18 +146,20 @@ def flappy():
                                                                                    "vasu is less cool than kunaal",
                                                                                    "kanye sucks roflmao",
                                                                                    "i can see the future and i'll tell you.. Vasu will die soon"])
+            print (message_to_send)
             message = {'bot_id':'288f9e18900355d4b59ec6f717', 'text':message_to_send}
             message = json.dumps(message)
             r = requests.post('https://api.groupme.com/v3/bots/post', message)
 
         if "soap" in words or "shloak" in words:
-            if s == random.randomint(90,100):
-                message = {'bot_id':'288f9e18900355d4b59ec6f717', 'text':random.choice("shloak is ok",
+            message = {'bot_id':'288f9e18900355d4b59ec6f717', 'text':random.choice("shloak is ok",
                                                                                        "how does that guy have friends?",
                                                                                        "shloak lame",
                                                                                        "shloak needs peer pressure to do more drugs",
                                                                                        "wil soapy all grown up now",
                                                                                        "i am a sad robot")}
+            message = json.dumps(message)
+            r = requests.post('https://api.groupme.com/v3/bots/post', message)
                 
                                                                                        
             
