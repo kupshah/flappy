@@ -149,12 +149,14 @@ def flappy():
                 r = requests.post('https://api.groupme.com/v3/bots/post', message)
 
         if "vasu" in words:
-            if v == random.randomint(10,20):
-                message = {'bot_id':'288f9e18900355d4b59ec6f717', 'text':random.choice("vasu is sooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo dumb",
+            if v == 15:
+                message_to_send = random.choice("vasu is sooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo dumb",
                                                                                    "vasu stupidest smrt person in the world.... HOWW??W?W??W??",
                                                                                    "vasu is less cool than kunaal",
                                                                                    "kanye sucks roflmao",
-                                                                                   "i can see the future and i'll tell you.. Vasu might become a doctor")}
+                                                                                   "i can see the future and i'll tell you.. Vasu will die soon")
+                
+                message = {'bot_id':'288f9e18900355d4b59ec6f717', 'text':message_to_send}
                 message = json.dumps(message)
                 r = requests.post('https://api.groupme.com/v3/bots/post', message)
 
